@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
+import 'package:snap_shop/routes/app_routes.dart';
 
 import '../../utils/appconstant.dart';
 
@@ -77,7 +78,10 @@ class WelcomeView extends StatelessWidget {
               width: screenWidth * 0.7,
               height: screenHeight * 0.08,
               child: TextButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    //todo sign in screen
+                    Navigator.pushNamed(context, AppRoutes.signin);
+                  },
                   icon: const FaIcon(Icons.email,
                       size: 28, color: AppConstant.appTextColor),
                   label: const Text(

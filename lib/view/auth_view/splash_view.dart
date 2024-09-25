@@ -1,6 +1,7 @@
 import "dart:async";
 import "package:flutter/material.dart";
 import "package:lottie/lottie.dart";
+import "package:snap_shop/routes/app_routes.dart";
 
 import "../../utils/appconstant.dart";
 
@@ -15,7 +16,9 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {});
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushNamed(context, AppRoutes.welcome);
+    });
   }
 
   @override
