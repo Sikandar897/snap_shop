@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:lottie/lottie.dart';
+import 'package:snap_shop/routes/app_routes.dart';
 
 import '../../utils/appconstant.dart';
 
@@ -93,7 +94,9 @@ class _SignInViewState extends State<SignInView> {
                     margin: const EdgeInsets.symmetric(horizontal: 10.0),
                     alignment: Alignment.centerRight,
                     child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, AppRoutes.restPassword);
+                      },
                       child: const Text('Forget password?',
                           style: TextStyle(
                               color: AppConstant.appSecondoryColor,
