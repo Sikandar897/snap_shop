@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snap_shop/routes/app_routes.dart';
 import 'package:snap_shop/view/auth_view/signin_view.dart';
+import 'package:snap_shop/view/auth_view/signup_view.dart';
 import 'package:snap_shop/view/auth_view/welcome_view.dart';
 
 import '../view/auth_view/rest_password.dart';
@@ -18,6 +19,9 @@ class RouteGenerator {
       //signin view
       case AppRoutes.signin:
         return MaterialPageRoute(builder: (_) => const SignInView());
+      //signup view
+      case AppRoutes.sigup:
+        return MaterialPageRoute(builder: (_) => const SignUpView());
 
       //forgot password view
       case AppRoutes.restPassword:

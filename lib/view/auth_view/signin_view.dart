@@ -131,7 +131,9 @@ class _SignInViewState extends State<SignInView> {
                         style: TextStyle(color: AppConstant.appSecondoryColor),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, AppRoutes.sigup);
+                        },
                         child: const Text(
                           "Sign Up",
                           style: TextStyle(
