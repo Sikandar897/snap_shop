@@ -38,7 +38,7 @@ class _SignInViewState extends State<SignInView> {
               child: Column(
                 children: [
                   isKeyboardVisible
-                      ? const Text('Welcome to MysticMall')
+                      ? const Text('Welcome to SnapShop')
                       : Column(
                           children: [
                             Lottie.asset('assets/images/splash-icon.json')
