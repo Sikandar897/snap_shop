@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:snap_shop/view/auth_view/signin_view.dart';
 import 'routes/app_routes.dart';
 import 'routes/routes_generator.dart';
-import 'view/auth_view/welcome_view.dart';
 
 void main() {
   runApp(const MyApp());

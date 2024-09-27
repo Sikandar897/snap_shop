@@ -3,6 +3,7 @@ import 'package:snap_shop/routes/app_routes.dart';
 import 'package:snap_shop/view/auth_view/signin_view.dart';
 import 'package:snap_shop/view/auth_view/signup_view.dart';
 import 'package:snap_shop/view/auth_view/welcome_view.dart';
+import 'package:snap_shop/view/user-panel/home_view.dart';
 
 import '../view/auth_view/rest_password.dart';
 import '../view/auth_view/splash_view.dart';
@@ -26,6 +27,10 @@ class RouteGenerator {
       //forgot password view
       case AppRoutes.restPassword:
         return MaterialPageRoute(builder: (_) => const RestPasswordView());
+
+      //Home view
+      case AppRoutes.home:
+        return MaterialPageRoute(builder: (_) => const HomeView());
 
       // Add new routes here
 

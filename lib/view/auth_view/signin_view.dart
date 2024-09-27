@@ -114,7 +114,9 @@ class _SignInViewState extends State<SignInView> {
                     width: screenWidth / 2,
                     height: screenHeight / 18,
                     child: TextButton(
-                        onPressed: () async {},
+                        onPressed: () async {
+                          Navigator.pushNamed(context, AppRoutes.home);
+                        },
                         child: const Text(
                           'Sign In',
                           style: TextStyle(color: AppConstant.appTextColor),
