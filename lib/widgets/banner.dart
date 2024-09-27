@@ -51,37 +51,3 @@ class _BannerWidgetState extends State<BannerWidget> {
     );
   }
 }
-
-
-
-
-//       child: Obx(() {
-//         return CarouselSlider(
-//           items: 
-//               .map((imageUrls) => ClipRRect(
-//                     borderRadius: BorderRadius.circular(10.0),
-//                     child: CachedNetworkImage(
-//                       imageUrl: imageUrls,
-//                       fit: BoxFit.cover,
-//                       width: Get.width - 10,
-//                       placeholder: (context, url) => const ColoredBox(
-//                         color: Colors.white,
-//                         child: Center(
-//                           child: CupertinoActivityIndicator(),
-//                         ),
-//                       ),
-//                       errorWidget: (context, url, error) =>
-//                           const Icon(Icons.error),
-//                     ),
-//                   ))
-//               .toList(),
-//           options: CarouselOptions(
-//               scrollDirection: Axis.horizontal,
-//               autoPlay: true,
-//               aspectRatio: 2.5,
-//               viewportFraction: 1),
-//         );
-//       }),
-//     );
-//   }
-// }

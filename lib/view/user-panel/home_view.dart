@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snap_shop/utils/appconstant.dart';
 
 import '../../widgets/banner.dart';
+import '../../widgets/category.dart';
 import '../../widgets/drawer.dart';
 import '../../widgets/heading.dart';
 
@@ -15,10 +16,9 @@ class HomeView extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Snap Shop'),
-        foregroundColor: AppConstant.appTextColor,
-        backgroundColor: AppConstant.appSecondoryColor,
-      ),
+          title: const Text('Snap Shop'),
+          foregroundColor: AppConstant.appTextColor,
+          backgroundColor: AppConstant.appMainColor),
       drawer: const DrawerWidget(),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
@@ -40,6 +40,11 @@ class HomeView extends StatelessWidget {
                 onTap: () {},
                 buttonText: 'See More >',
               ),
+
+              //category widget
+              // const CategoryWidget()
+              // category widget
+              FancyCategoryWidget()
             ],
           ),
         ),
