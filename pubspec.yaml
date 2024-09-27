@@ -45,6 +45,9 @@ dependencies:
 
   #this dependecy helps in auto keyboard of and on while swting to other screens
   flutter_keyboard_visibility: ^6.0.0
+
+  #for banner
+  carousel_slider_plus: ^7.0.1
   
   
   
