@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FancyCategoryWidget extends StatelessWidget {
-  const FancyCategoryWidget({super.key});
+class AllProducts extends StatelessWidget {
+  const AllProducts({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +14,22 @@ class FancyCategoryWidget extends StatelessWidget {
       {
         "categoryImg": 'assets/images/jackets.jpg',
         "categoryName": 'Jackets',
+        "originalPrice": '3000',
       },
       {
         "categoryImg": 'assets/images/skincare.jpg',
         "categoryName": 'Skin Care',
+        "originalPrice": '2000',
       },
       {
         "categoryImg": 'assets/images/clothes.jpg',
         "categoryName": 'Clothes',
+        "originalPrice": '1200',
       },
       {
         "categoryImg": 'assets/images/Footware.jpg',
         "categoryName": 'Footwear',
+        "originalPrice": '5000',
       },
     ];
 
@@ -75,6 +79,13 @@ class FancyCategoryWidget extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.black87,
                           letterSpacing: 1.2,
+                        ),
+                      ),
+                      Text(
+                        'Rs. ${categories[index]['originalPrice']}',
+                        style: const TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.black,
                         ),
                       ),
                     ],

@@ -11,9 +11,9 @@ class BannerWidget extends StatefulWidget {
 
 class _BannerWidgetState extends State<BannerWidget> {
   final List<String> _imageUrls = [
-    'https://pixelixe.com/blog/images/250/e-commerce-banner-strategy.jpg',
+    'https://i.pinimg.com/564x/85/90/2e/85902e2dd9dc854e7f036564b559da80.jpg',
     'https://img.freepik.com/free-vector/horizontal-banner-template-black-friday-sales_23-2150867247.jpg?t=st=1727470173~exp=1727473773~hmac=b7096cc57ab32f0b82568ef9709f1e5329c1a97226c840a2e6ec623e91e70521&w=2000',
-    'https://img.freepik.com/free-vector/flat-black-friday-horizontal-sale-banner_23-2149108730.jpg?t=st=1727470203~exp=1727473803~hmac=3ad9fd1cb80fe10ad74e0f87b2b7235101aefb731818012a61cc57fa88fd07cf&w=2000',
+    "https://i.pinimg.com/564x/84/ad/1c/84ad1c67da7c18049aaa3f71bb3e474b.jpg",
   ];
   @override
   Widget build(BuildContext context) {

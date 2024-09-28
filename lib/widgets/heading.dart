@@ -51,6 +51,7 @@ class HeadingWidget extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
+                    color: AppConstant.appMainColor,
                     border: Border.all(
                       color: AppConstant.appSecondoryColor,
                       width: 1.5,
@@ -62,7 +63,7 @@ class HeadingWidget extends StatelessWidget {
                     style: const TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 12.0,
-                        color: AppConstant.appSecondoryColor),
+                        color: AppConstant.appTextColor),
                   ),
                 ),
               ),
