@@ -5,4 +5,5 @@ class AppRoutes {
   static const String sigup = '/sigup';
   static const String restPassword = '/restPassword';
   static const String home = '/home';
+  static const String cartview = '/cartview';
 }
