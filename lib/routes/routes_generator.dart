@@ -7,6 +7,7 @@ import 'package:snap_shop/view/user-panel/home_view.dart';
 
 import '../view/auth_view/rest_password.dart';
 import '../view/auth_view/splash_view.dart';
+import '../view/user-panel/cart_view.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -31,6 +32,9 @@ class RouteGenerator {
       //Home view
       case AppRoutes.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
+
+      case AppRoutes.cartview:
+        return MaterialPageRoute(builder: (_) => const CartView());
 
       // Add new routes here
 
