@@ -1,5 +1,7 @@
 # SnapShop - Full-Stack E-commerce App
 
+![](https://raw.githubusercontent.com/Sikandar897/snap_shop/main/assets/images/githubimg.png)
+
 Welcome to SnapShop, a fully-featured, scalable e-commerce application built with Node.js and MongoDB. This project is a continuation of my previous app, Mystic Mall, which was built using Firebase. However, this time, I’ve taken a more advanced approach by developing the backend with Node.js and MongoDB, pushing further into full-stack development.
 
 ## Exciting News!
