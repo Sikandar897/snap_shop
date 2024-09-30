@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:snap_shop/routes/app_routes.dart';
 import 'package:snap_shop/utils/appconstant.dart';
-
 import '../../widgets/all_products.dart';
 import '../../widgets/banner.dart';
 import '../../widgets/category.dart';
@@ -18,9 +18,19 @@ class HomeView extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Snap Shop'),
-          foregroundColor: AppConstant.appTextColor,
-          backgroundColor: AppConstant.appMainColor),
+        title: const Text('Snap Shop'),
+        foregroundColor: AppConstant.appTextColor,
+        backgroundColor: AppConstant.appMainColor,
+        actions: [
+          GestureDetector(
+            onTap: () => Navigator.pushNamed(context, AppRoutes.cartview),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Icon(Icons.shopping_cart),
+            ),
+          )
+        ],
+      ),
       drawer: const DrawerWidget(),
       backgroundColor: Colors.grey.shade200,
       body: SingleChildScrollView(
